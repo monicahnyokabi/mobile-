@@ -27,7 +27,7 @@ abstract class CoursesRecyclerViewAdapter (
         holder.itemView.name.text = course.name
         holder.itemView.code = course.code
         holder.itemView.id.instructor = course.instructor
-        holder.itemView.description = course.description
+        holder.itemView.description=course.description
     }
 
     class CoursesViewHolder ( View: View) : RecyclerView.ViewHolder(view)
