@@ -1,4 +1,4 @@
-package com.example.hello
+package Response
 
 import com.google.gson.annotations.SerializedName
 

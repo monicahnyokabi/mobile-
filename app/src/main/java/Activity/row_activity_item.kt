@@ -1,7 +1,8 @@
-package com.example.hello
+package Activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.hello.R
 
 class row_activity_item : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

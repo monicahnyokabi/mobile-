@@ -1,10 +1,12 @@
-package com.example.hello
+package Activity
 
+import Api.ApiClient
+import Api.ApiInterface
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import kotlinx.android.synthetic.main.activity_registration.*
+import com.example.hello.R
 import okhttp3.MultipartBody
 import okhttp3.RequestBody
 import retrofit2.Call

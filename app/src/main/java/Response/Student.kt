@@ -1,7 +1,8 @@
-package com.example.hello
+package Response
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.hello.R
 import com.google.gson.annotations.SerializedName
 
 class Student : AppCompatActivity() {

@@ -1,6 +1,4 @@
-package com.example.hello
-import android.text.Layout
-import android.view.LayoutInflater
+package Adapter
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
@@ -13,14 +11,14 @@ abstract class CoursesRecyclerViewAdapter (
     abstract override fun onCreateViewHolder(
         parent: ViewGroup,
         viewType: Int
-    ): CoursesRecyclerViewAdapter.CoursesViewHolder (
+    ): CoursesViewHolder (
 
     LayoutInflater.from(parent.context).inflate(R.layout.item_courses,parent,false)
     )
     override fun getItemCount() = courses.size
 
     override fun onBindViewHolder(
-        holder: CoursesRecyclerViewAdapter.CoursesViewHolder,
+        holder: CoursesViewHolder,
         position: Int) {
         val courses = courses[position]
         holder.itemView.id.text = course.id
