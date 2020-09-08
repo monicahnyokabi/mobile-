@@ -44,7 +44,7 @@ class RegistrationActivity : AppCompatActivity() {
     fun registerUser(requestBody: RequestBody) {
         var apiClient = ApiClient.buildService(ApiInterface::class.java)
         var registrationCall = apiClient.registerStudent(requestBody)
-        registrationCall.enqueue(object : Callback<RegistrationResponse> {
+        registrationCall.enqueue(object  Callback<RegistrationResponse> {
             override fun onFailure(call: Call<RegistrationResponse>, t: Throwable) {
                 Toast.makeText(baseContext, t.message, Toast.LENGTH_LONG).show()
             }

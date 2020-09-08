@@ -21,6 +21,13 @@ allprojects {
         jcenter()
         
     }
+
+}
+allprojects{
+    repositories{
+        jcenter()
+        maven{url 'https://maven.google.com'}
+    }
 }
 
 task clean(type: Delete) {
